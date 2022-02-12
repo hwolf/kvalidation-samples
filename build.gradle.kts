@@ -29,11 +29,11 @@ dependencies {
 
 sonarqube {
     properties {
-        property("sonar.projectKey", "hwolf_validation")
+        property("sonar.projectKey", "kvalidation-samples")
         property("sonar.organization", "hwolf")
         property("sonar.host.url", "https://sonarcloud.io")
-        property("sonar.junit.reportPaths", "**/build/test-results/**/*.xml")
-        property("sonar.coverage.jacoco.xmlReportPaths", "**/build/reports/kover/report.xml")
+        property("sonar.junit.reportPaths", "build/test-results/**/*.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "build/reports/kover/report.xml")
     }
 }
 
