@@ -2,6 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.6.10"
+    id("org.jetbrains.kotlinx.kover") version "0.5.0"
+    id("org.sonarqube") version "3.3"
 }
 
 repositories {
@@ -23,6 +25,16 @@ dependencies {
     testImplementation("io.strikt:strikt-core")
     testImplementation("org.tinylog:tinylog-impl:2.4.1")
     testImplementation("org.tinylog:slf4j-tinylog:2.4.1")
+}
+
+sonarqube {
+    properties {
+        property("sonar.projectKey", "hwolf_validation")
+        property("sonar.organization", "hwolf")
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.junit.reportPaths", "**/build/test-results/**/*.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "**/build/reports/kover/report.xml")
+    }
 }
 
 tasks.withType<KotlinCompile> {
