@@ -19,7 +19,7 @@ import io.github.hwolf.kvalidation.i18n.messageInterpolator
 import io.github.hwolf.kvalidation.validate
 import io.kotest.core.spec.style.FunSpec
 import strikt.api.expectThat
-import strikt.assertions.contains
+import strikt.assertions.containsExactly
 import java.util.*
 
 class UserProfileTests: FunSpec({
@@ -38,10 +38,10 @@ class UserProfileTests: FunSpec({
         val messages = violations.violations.map {
             messageInterpolator.interpolate(it, Locale.GERMAN)
         }
-        expectThat(messages).contains(
+        expectThat(messages).containsExactly(
             "Your name must have at least 6 characters",
             "You must be older than 18",
-            "The password must have between 8 and 40 characters",
+            "The password must have at least 8 characters",
             "Please repeat the password from field password",
             "The field email must contain a valid email address")
     }

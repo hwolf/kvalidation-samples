@@ -15,11 +15,12 @@
  */
 package io.github.hwolf.kvalidation.samples
 
-import io.github.hwolf.kvalidation.common.isEmail
-import io.github.hwolf.kvalidation.hasLength
-import io.github.hwolf.kvalidation.isEqual
-import io.github.hwolf.kvalidation.isGreaterOrEqual
-import io.github.hwolf.kvalidation.isNotBlank
+import io.github.hwolf.kvalidation.common.email
+import io.github.hwolf.kvalidation.equal
+import io.github.hwolf.kvalidation.greaterOrEqual
+import io.github.hwolf.kvalidation.maxLength
+import io.github.hwolf.kvalidation.minLength
+import io.github.hwolf.kvalidation.notBlank
 import io.github.hwolf.kvalidation.validator
 
 data class UserProfile(
@@ -32,19 +33,20 @@ data class UserProfile(
 
 val userProfileValidator = validator<UserProfile> {
     UserProfile::name {
-        isNotBlank()
+        notBlank()
         hasMinLength(6)
     }
     UserProfile::age required {
-        isGreaterOrEqual(18)
+        greaterOrEqual(18)
     }
     UserProfile::password required {
-        hasLength(8, 40)
+        minLength(8)
+        maxLength(40)
     }
     UserProfile::confirmPassword required {
-        isEqual(UserProfile::password)
+        equal(UserProfile::password)
     }
     UserProfile::email ifPresent {
-        isEmail()
+        email()
     }
 }
