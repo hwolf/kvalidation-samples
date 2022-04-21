@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.6.20"
+    id("org.jetbrains.kotlin.jvm") version "1.6.21"
     id("org.jetbrains.kotlinx.kover") version "0.5.0"
     id("org.sonarqube") version "3.3"
 }
@@ -13,7 +13,7 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    implementation(platform("io.github.hwolf.kvalidation:kvalidation-bom:0.4.1"))
+    implementation(platform("io.github.hwolf.kvalidation:kvalidation-bom:0.4.2"))
     implementation("io.github.hwolf.kvalidation:kvalidation-core")
     implementation("io.github.hwolf.kvalidation:kvalidation-common")
     implementation("io.github.hwolf.kvalidation:kvalidation-i18n")
