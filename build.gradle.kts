@@ -29,7 +29,7 @@ dependencies {
     implementation("io.github.hwolf.kvalidation:kvalidation-i18n")
 
     testImplementation(platform("io.strikt:strikt-bom:0.34.1"))
-    testImplementation(platform("io.kotest:kotest-bom:5.4.1"))
+    testImplementation(platform("io.kotest:kotest-bom:5.4.2"))
 
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.strikt:strikt-core")
