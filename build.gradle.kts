@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlinx:kover:0.5.1")
+        classpath("org.jetbrains.kotlinx:kover:0.6.0")
     }
 }
 
