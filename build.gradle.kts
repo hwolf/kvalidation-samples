@@ -12,7 +12,7 @@ buildscript {
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.7.10"
-    //id("org.jetbrains.kotlinx.kover") version "0.5.1"
+    id("org.jetbrains.kotlinx.kover") version "0.6.0"
     id("org.sonarqube") version "3.4.0.2513"
 }
 
