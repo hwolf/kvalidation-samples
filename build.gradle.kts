@@ -43,7 +43,7 @@ sonarqube {
         property("sonar.organization", "hwolf")
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.junit.reportPaths", "build/test-results/**/*.xml")
-        property("sonar.coverage.jacoco.xmlReportPaths", "build/reports/kover/report.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "build/reports/kover/xml/report.xml")
     }
 }
 
