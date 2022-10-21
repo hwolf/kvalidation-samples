@@ -6,13 +6,13 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlinx:kover:0.6.0")
+        classpath("org.jetbrains.kotlinx:kover:0.6.1")
     }
 }
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.7.20"
-    id("org.jetbrains.kotlinx.kover") version "0.6.0"
+    id("org.jetbrains.kotlinx.kover") version "0.6.1"
     id("org.sonarqube") version "3.4.0.2513"
 }
 
@@ -29,7 +29,7 @@ dependencies {
     implementation("io.github.hwolf.kvalidation:kvalidation-i18n")
 
     testImplementation(platform("io.strikt:strikt-bom:0.34.1"))
-    testImplementation(platform("io.kotest:kotest-bom:5.4.2"))
+    testImplementation(platform("io.kotest:kotest-bom:5.5.1"))
 
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.strikt:strikt-core")
