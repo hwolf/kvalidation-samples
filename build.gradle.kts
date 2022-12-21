@@ -37,7 +37,7 @@ dependencies {
     testImplementation("org.tinylog:slf4j-tinylog:2.5.0")
 }
 
-sonarqube {
+sonar {
     properties {
         property("sonar.projectKey", "hwolf_kvalidation-samples")
         property("sonar.organization", "hwolf")
