@@ -23,7 +23,7 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    implementation(platform("io.github.hwolf.kvalidation:kvalidation-bom:0.5.5"))
+    implementation(platform("io.github.hwolf.kvalidation:kvalidation-bom:0.5.6"))
     implementation("io.github.hwolf.kvalidation:kvalidation-core")
     implementation("io.github.hwolf.kvalidation:kvalidation-common")
     implementation("io.github.hwolf.kvalidation:kvalidation-i18n")
