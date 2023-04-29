@@ -11,7 +11,7 @@ buildscript {
 }
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.8.20"
+    id("org.jetbrains.kotlin.jvm") version "1.8.21"
     id("org.jetbrains.kotlinx.kover") version "0.6.1"
     id("org.sonarqube") version "4.0.0.2929"
 }
@@ -23,13 +23,13 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    implementation(platform("io.github.hwolf.kvalidation:kvalidation-bom:0.5.9"))
+    implementation(platform("io.github.hwolf.kvalidation:kvalidation-bom:0.5.10"))
     implementation("io.github.hwolf.kvalidation:kvalidation-core")
     implementation("io.github.hwolf.kvalidation:kvalidation-common")
     implementation("io.github.hwolf.kvalidation:kvalidation-i18n")
 
     testImplementation(platform("io.strikt:strikt-bom:0.34.1"))
-    testImplementation(platform("io.kotest:kotest-bom:5.5.5"))
+    testImplementation(platform("io.kotest:kotest-bom:5.6.1"))
 
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.strikt:strikt-core")
