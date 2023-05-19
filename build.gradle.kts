@@ -12,7 +12,7 @@ buildscript {
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.8.21"
-    id("org.jetbrains.kotlinx.kover") version "0.6.1"
+    id("org.jetbrains.kotlinx.kover") version "0.7.0"
     id("org.sonarqube") version "4.0.0.2929"
 }
 
@@ -29,12 +29,12 @@ dependencies {
     implementation("io.github.hwolf.kvalidation:kvalidation-i18n")
 
     testImplementation(platform("io.strikt:strikt-bom:0.34.1"))
-    testImplementation(platform("io.kotest:kotest-bom:5.6.1"))
+    testImplementation(platform("io.kotest:kotest-bom:5.6.2"))
 
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.strikt:strikt-core")
-    testImplementation("org.tinylog:tinylog-impl:2.6.1")
-    testImplementation("org.tinylog:slf4j-tinylog:2.6.1")
+    testImplementation("org.tinylog:tinylog-impl:2.6.2")
+    testImplementation("org.tinylog:slf4j-tinylog:2.6.2")
 }
 
 sonar {
