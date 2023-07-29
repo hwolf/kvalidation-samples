@@ -31,7 +31,7 @@ data class UserProfile(
     val email: String?
 )
 
-val userProfileValidator = validator<UserProfile> {
+val userProfileValidator = validator {
     UserProfile::name {
         notBlank()
         hasMinLength(6)
