@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.9.20"
+    id("org.jetbrains.kotlin.jvm") version "1.9.22"
     id("org.jetbrains.kotlinx.kover") version "0.7.4"
     id("org.sonarqube") version "4.4.1.3373"
 }
@@ -24,7 +24,7 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.strikt:strikt-core")
     testImplementation("org.tinylog:tinylog-impl:2.7.0")
-    testImplementation("org.tinylog:slf4j-tinylog:2.6.2")
+    testImplementation("org.tinylog:slf4j-tinylog:2.7.0")
 }
 
 sonar {
