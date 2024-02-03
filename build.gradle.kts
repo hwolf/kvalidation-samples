@@ -24,7 +24,7 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5")
     testImplementation("io.strikt:strikt-core")
     testImplementation("org.tinylog:tinylog-impl:2.6.2")
-    testImplementation("org.tinylog:slf4j-tinylog:2.6.2")
+    testImplementation("org.tinylog:slf4j-tinylog:2.7.0")
 }
 
 sonar {
