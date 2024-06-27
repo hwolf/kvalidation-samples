@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.9.24"
-    id("org.jetbrains.kotlinx.kover") version "0.8.0"
+    id("org.jetbrains.kotlinx.kover") version "0.8.2"
     id("org.sonarqube") version "5.0.0.4638"
 }
 
